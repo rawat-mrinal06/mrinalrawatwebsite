@@ -1,4 +1,20 @@
 // ==================== //
+// Dynamic Data Updates
+// ==================== //
+
+const updateDynamicData = () => {
+  const currentYear = new Date().getFullYear();
+  const startYear = 2016;
+  const yoe = currentYear - startYear;
+
+  document.querySelectorAll('.experience-val').forEach(el => {
+    el.textContent = yoe;
+  });
+};
+
+updateDynamicData();
+
+// ==================== //
 // Scroll Reveal Animation
 // ==================== //
 
